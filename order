@@ -1,0 +1,29 @@
+= 8.45--9.00 Opening Remark
+= 9.00--10.00 Keynote Speech
+= Theme: Language Processing and Evaluation
+3 10.00--10.15  # Crossing Language Boundaries: Evaluation of Large Language Models on Urdu-English Question Answering
+13 10.15--10.30  # Hindi Reading Comprehension: Do Large Language Models Exhibit Semantic Understanding?
+= Coffee Break
+1 11.00--11.15  # Machine Translation and Transliteration for Indo-Aryan Languages: A Systematic Review
+4 11.15--11.30  # Investigating the Effect of Backtranslation for Indic Languages
+7 11.30--11.45  # BERTopic for Topic Modeling of Hindi Short Texts: A Comparative Study
+8 11.45--12.00  # Evaluating Structural and Linguistic Quality in Urdu DRS Parsing and Generation through Bidirectional Evaluation
+11 12.00--12.15  # Studying the Effect of Hindi Tokenizer Performance on Downstream Tasks
+28 12.15--12.30  # Adapting Multilingual LLMs to Low-Resource Languages using Continued Pre-training and Synthetic Corpus: A Case Study for Hindi LLMs
+22 12.30--12.45  # OVQA: A Dataset for Visual Question Answering and Multimodal Research in Odia Language
+20 12.45--13.00  # Advancing Multilingual Speaker Identification and Verification for Indo-Aryan and Dravidian Languages
+= 13.00--14.00 Lunch Break
+= Theme: Applications and Societal Impact: Applying NLP to Real-World Problems and Societal Challenges
+5 14.00--14.15  # Sentiment Analysis of Sinhala News Comments Using Transformers
+9 14.15--14.30  # ExMute: A Context-Enriched Multimodal Dataset for Hateful Memes
+10 14.30--14.45  # Studying the capabilities of Large Language Models in solving Combinatorics Problems posed in Hindi
+12 14.45--15.00  # From Scarcity to Capability: Empowering Fake News Detection in Low-Resource Languages with LLMs
+16 15.00--15.15  # Enhancing Participatory Development Research in South Asia through LLM Agents System: An Empirically-Grounded Methodological Initiative from Field Evidence in Sri Lankan
+19 15.15--15.30  # Identifying Aggression and Offensive Language in Code-Mixed Tweets: A Multi-Task Transfer Learning Approach
+= 15.30--16.00 Coffee Break
+= Shared Task Discussion
+23   # Team IndiDataMiner at IndoNLP 2025: Hindi Back Transliteration - Roman  to Devanagari using LLaMa
+25   # IndoNLP 2025 Shared Task: Romanized Sinhala to Sinhala Reverse Transliteration Using BERT
+26   # Sinhala Transliteration: A Comparative Analysis Between Rule-based and Seq2Seq Approaches
+27   # Romanized to Native Malayalam Script Transliteration Using an Encoder-Decoder Framework
+= Final Remark

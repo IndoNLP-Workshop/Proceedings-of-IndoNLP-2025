@@ -1,0 +1,204 @@
+P: 1
+M: 
+T: Machine Translation and Transliteration for Indo-Aryan Languages: A Systematic Review
+A: Perera, Sandun Sameera
+A: Sumanathilaka, Deshan Koshala
+F: final/1/1_Paper.pdf
+L: 11
+
+P: 3
+M: 
+T: Crossing Language Boundaries: Evaluation of Large Language Models on Urdu-English Question Answering
+A: kazi, Samreen
+A: Rahim, Maria
+A: Khoja, Shakeel Ahmed
+F: final/3/3_Paper.pdf
+L: 11
+
+P: 4
+M: 
+T: Investigating the Effect of Backtranslation for Indic Languages
+A: Das, Sudhansu Bala
+A: Choudhury, Samujjal
+A: Mishra, Dr Tapas Kumar
+A: Patra, Dr Bidyut Kr
+F: final/4/4_Paper.pdf
+L: 15
+
+P: 5
+M: 
+T: Sentiment Analysis of Sinhala News Comments Using Transformers
+A: Bandaranayake, Isuru
+A: Usoof, Hakim
+F: final/5/5_Paper.pdf
+L: 9
+
+P: 7
+M: 
+T: BERTopic for Topic Modeling of Hindi Short Texts: A Comparative Study
+A: Mutsaddi, Atharva
+A: Jamkhande, Anvi
+A: Thakre, Aryan Shirish
+A: Haribhakta, Yashodhara
+F: final/7/7_Paper.pdf
+L: 11
+
+P: 8
+M: 
+T: Evaluating Structural and Linguistic Quality in Urdu DRS Parsing and Generation through Bidirectional Evaluation
+A: Amin, Muhammad Saad
+A: Anselma, Luca
+A: Mazzei, Alessandro
+F: final/8/8_Paper.pdf
+L: 11
+
+P: 9
+M: 
+T: ExMute: A Context-Enriched Multimodal Dataset for Hateful Memes
+A: Debnath, Riddhiman Swanan
+A: Firuj, Nahian Beente
+A: Shakib, Abdul Wadud
+A: Sultana, Sadia
+A: Islam, Md Saiful
+F: final/9/9_Paper.pdf
+L: 7
+
+P: 10
+M: 
+T: Studying the capabilities of Large Language Models in solving Combinatorics Problems posed in Hindi
+A: Kumar, Yash
+A: Roy, Subhajit
+F: final/10/10_Paper.pdf
+L: 10
+
+P: 11
+M: 
+T: Studying the Effect of Hindi Tokenizer Performance on Downstream Tasks
+A: Goel, Rashi
+A: Sadat, Fatiha
+F: final/11/11_Paper.pdf
+L: 6
+
+P: 12
+M: 
+T: From Scarcity to Capability: Empowering Fake News Detection in Low-Resource Languages with LLMs
+A: Shibu, Hrithik Majumdar
+A: Datta, Shrestha
+A: Miah, Md. Sumon
+A: Sami, Nasrullah
+A: Chowdhury, Mahruba Sharmin
+A: Islam, Md Saiful
+F: final/12/12_Paper.pdf
+L: 8
+
+P: 13
+M: 
+T: Hindi Reading Comprehension: Do Large Language Models Exhibit Semantic Understanding?
+A: Lal, Daisy Monika
+A: Rayson, Paul
+A: El-Haj, Mo
+F: final/13/13_Paper.pdf
+L: 11
+
+P: 16
+M: 
+T: Enhancing Participatory Development Research in South Asia through LLM Agents System: An Empirically-Grounded Methodological Initiative from Field Evidence in Sri Lankan
+A: Zhao, Xinjie
+A: Wang, Hao
+A: Sriwarnasinghe, Shyaman Maduranga
+A: Tang, Jiacheng
+A: Wang, Shiyun
+A: Sugiyama, Sayaka
+A: Morikawa, So
+F: final/16/16_Paper.pdf
+L: 14
+
+P: 19
+M: 
+T: Identifying Aggression and Offensive Language in Code-Mixed Tweets: A Multi-Task Transfer Learning Approach
+A: Kancharla, Bharath
+A: Singh, Prabhjot
+A: Kancharla, Lohith Bhagavan
+A: Chama, Yashita
+A: Sharma, Raksha
+F: final/19/19_Paper.pdf
+L: 7
+
+P: 20
+M: 
+T: Advancing Multilingual Speaker Identification and Verification for Indo-Aryan and Dravidian Languages
+A: Sritharan, Braveenan
+A: Thayasivam, Uthayasanker
+F: final/20/20_Paper.pdf
+L: 7
+
+P: 22
+M: 
+T: OVQA: A Dataset for Visual Question Answering and Multimodal Research in Odia Language
+A: Parida, Shantipriya
+A: Sahoo, Shashikanta
+A: Sekhar, Sambit
+A: Sahoo, Kalyanamalini
+A: Kotwal, Ketan
+A: Khosla, Sonal
+A: Dash, Satya Ranjan
+A: Bose, Aneesh
+A: Kohli, Guneet Singh
+A: Lenka, Smruti Smita
+A: Bojar, Ondřej
+F: final/22/22_Paper.pdf
+L: 8
+
+P: 23
+M: 
+T: Team IndiDataMiner at IndoNLP 2025: Hindi Back Transliteration - Roman to Devanagari using LLaMa
+A: Kumar, Saurabh
+A: Kakadiya, Dhruvkumar Babubhai
+A: Singh, Sanasam Ranbir
+F: final/23/23_Paper.pdf
+L: 6
+
+P: 25
+M: 
+T: IndoNLP 2025 Shared Task: Romanized Sinhala to Sinhala Reverse Transliteration Using BERT
+A: Perera, Sandun Sameera
+A: Jayakodi, Lahiru Prabhath
+A: Sumanathilaka, Deshan Koshala
+A: Anuradha, Isuri
+F: final/25/25_Paper.pdf
+L: 7
+
+P: 26
+M: 
+T: Sinhala Transliteration: A Comparative Analysis Between Rule-based and Seq2Seq Approaches
+A: De Mel, Widanalage Mario Yomal
+A: Wickramasinghe, Kasun Imesha
+A: de Silva, Nisansa
+A: Ranathunga, Surangika Dayani
+F: final/26/26_Paper.pdf
+L: 9
+
+P: 27
+M: 
+T: Romanized to Native Malayalam Script Transliteration Using an Encoder-Decoder Framework
+A: Baiju, Bajiyo
+A: Manohar, Kavya
+A: Pillai, Leena G.
+A: Sherly, Elizabeth
+F: final/27/27_Paper.pdf
+L: 5
+
+P: 28
+M: 
+T: Adapting Multilingual LLMs to Low-Resource Languages using Continued Pre-training and Synthetic Corpus: A Case Study for Hindi LLMs
+A: Joshi, Raviraj
+A: Singla, Kanishk
+A: Kamath, Anusha
+A: Kalani, Raunak
+A: Paul, Rakesh
+A: Vaidya, Utkarsh
+A: Chauhan, Sanjay Singh
+A: Wartikar, Niranjan
+A: Long, Eileen
+F: final/28/28_Paper.pdf
+L: 8
