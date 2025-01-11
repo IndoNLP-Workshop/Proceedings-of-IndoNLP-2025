@@ -1,0 +1,293 @@
+initialized directories
+------------------------------------
+unpacked START final submission archive
+------------------------------------
+make db
+tar xfz final.tgz final
+Creating db file ...
+if [ -e "db" ]; then cp -p db db.`perl -e "print time()"`; fi
+/var/www/v3/coling2025/www/IndoNLP25/manager/aclpub/all/bin/manage-db.pl create
+Counting pages for final/1/1_Paper.pdf ...
+Counting pages for final/3/3_Paper.pdf ...
+Counting pages for final/4/4_Paper.pdf ...
+Counting pages for final/5/5_Paper.pdf ...
+Counting pages for final/7/7_Paper.pdf ...
+Counting pages for final/8/8_Paper.pdf ...
+Counting pages for final/9/9_Paper.pdf ...
+Counting pages for final/10/10_Paper.pdf ...
+Counting pages for final/11/11_Paper.pdf ...
+Counting pages for final/12/12_Paper.pdf ...
+Counting pages for final/13/13_Paper.pdf ...
+Counting pages for final/16/16_Paper.pdf ...
+Counting pages for final/19/19_Paper.pdf ...
+Counting pages for final/20/20_Paper.pdf ...
+Counting pages for final/22/22_Paper.pdf ...
+Counting pages for final/23/23_Paper.pdf ...
+Counting pages for final/25/25_Paper.pdf ...
+Counting pages for final/26/26_Paper.pdf ...
+Counting pages for final/27/27_Paper.pdf ...
+Counting pages for final/28/28_Paper.pdf ...
+Note: You may want to create an order file	with "make get-order"
+------------------------------------
+Fixed margins in the db file
+------------------------------------
+make get-order
+/var/www/v3/coling2025/www/IndoNLP25/manager/aclpub/all/bin/manage-db.pl get-order > order
+Now you can edit the order file if you like.
+------------------------------------
+created the order file from the Schedule Maker
+------------------------------------
+created the meta file
+------------------------------------
+touched the order file
+------------------------------------
+make shipout
+echo '\def\draftflag{1}' > draftflag.sty
+echo '\def\draftflag{0}' > draftflag.sty
+quietly running pdflatex titlepage.tex ...
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ \write18 enabled.
+entering extended mode
+quietly running pdflatex copyright.tex ...
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ \write18 enabled.
+entering extended mode
+quietly running pdflatex preface.tex ...
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ \write18 enabled.
+entering extended mode
+quietly running pdflatex organizers.tex ...
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ \write18 enabled.
+entering extended mode
+Restructuring db file based on order file ...
+/var/www/v3/coling2025/www/IndoNLP25/manager/aclpub/all/bin/manage-db.pl generate-tex toc
+generating toc...
+/var/www/v3/coling2025/www/IndoNLP25/manager/aclpub/all/bin/manage-db.pl generate-tex program
+generating program...
+/var/www/v3/coling2025/www/IndoNLP25/manager/aclpub/all/bin/manage-db.pl join-papers final
+El-Haj, Mo -> El Haj, Mo
+Bojar, Ondřej -> Bojar, Ondrej
+Miah, Md. Sumon -> Miah, Md Sumon
+Pillai, Leena G. -> Pillai, Leena G
+You may now edit allpapers.tex if you like.
+quietly running pdflatex book.tex ...
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ \write18 enabled.
+entering extended mode
+makeindex book
+This is makeindex, version 2.17 [TeX Live 2023] (kpathsea + Thai support).
+Scanning input file book.idx....done (85 entries accepted, 0 rejected).
+Sorting entries....done (554 comparisons).
+Generating output file book.ind....done (146 lines written, 0 warnings).
+Output written in book.ind.
+Transcript written in book.ilg.
+quietly running pdflatex book.tex ...
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ \write18 enabled.
+entering extended mode
+------------------------------------
+make cdrom
+cp /var/www/v3/coling2025/www/IndoNLP25/manager/aclpub/all/templates/proceedings/cdrom-root-files/*.css .  
+creating HTML program ...
+/var/www/v3/coling2025/www/IndoNLP25/manager/aclpub/all/bin/program-html.pl db meta > cdrom/program.html
+cp /var/www/v3/coling2025/www/IndoNLP25/manager/aclpub/all/templates/proceedings/cdrom-root-files/*.css .  
+creating author index page ...
+/var/www/v3/coling2025/www/IndoNLP25/manager/aclpub/all/bin/authors.pl db meta > cdrom/authors.html
+cp /var/www/v3/coling2025/www/IndoNLP25/manager/aclpub/all/templates/proceedings/cdrom-root-files/*.css .  
+rm -rf cdrom/bib
+creating bib files ...
+/var/www/v3/coling2025/www/IndoNLP25/manager/aclpub/all/bin/bib.pl db meta
+Argument "TOBEFILLED-1" isn't numeric in sprintf at /var/www/v3/coling2025/www/IndoNLP25/manager/aclpub/all/bin/bib.pl line 113.
+cp /var/www/v3/coling2025/www/IndoNLP25/manager/aclpub/all/templates/proceedings/cdrom-root-files/*.css .  
+creating pdf files ...
+/var/www/v3/coling2025/www/IndoNLP25/manager/aclpub/all/bin/manage-db.pl create-cd < meta
+linking proceedings volume...
+producing front matter...
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+Redundant argument in sprintf at /var/www/v3/coling2025/www/IndoNLP25/manager/aclpub/all/bin/manage-db.pl line 489, <STDIN> line 10.
+creating pdf files stamped with citation info...
+PDF meta-data:
+  title: Crossing Language Boundaries: Evaluation of Large Language Models on Urdu-English Question Answering
+  author(s): Samreen kazi ; Maria Rahim ; Shakeel Ahmed Khoja
+  subject (venue): myconference TOBEFILLED-1
+
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+PDF meta-data:
+  title: Hindi Reading Comprehension: Do Large Language Models Exhibit Semantic Understanding?
+  author(s): Daisy Monika Lal ; Paul Rayson ; Mo El-Haj
+  subject (venue): myconference TOBEFILLED-1
+
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+[WARNING] tokens.py:221 Did not find PDF object (296, 0) (line=3588, col=1, token='startxref')
+PDF meta-data:
+  title: Machine Translation and Transliteration for Indo-Aryan Languages: A Systematic Review
+  author(s): Sandun Sameera Perera ; Deshan Koshala Sumanathilaka
+  subject (venue): myconference TOBEFILLED-1
+
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+PDF meta-data:
+  title: Investigating the Effect of Backtranslation for Indic Languages
+  author(s): Sudhansu Bala Das ; Samujjal Choudhury ; Dr Tapas Kumar Mishra ; Dr Bidyut Kr Patra
+  subject (venue): myconference TOBEFILLED-1
+
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+[WARNING] tokens.py:221 Did not find PDF object (324, 0) (line=2722, col=1, token='startxref')
+PDF meta-data:
+  title: BERTopic for Topic Modeling of Hindi Short Texts: A Comparative Study
+  author(s): Atharva Mutsaddi ; Anvi Jamkhande ; Aryan Shirish Thakre ; Yashodhara Haribhakta
+  subject (venue): myconference TOBEFILLED-1
+
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+PDF meta-data:
+  title: Evaluating Structural and Linguistic Quality in Urdu DRS Parsing and Generation through Bidirectional Evaluation
+  author(s): Muhammad Saad Amin ; Luca Anselma ; Alessandro Mazzei
+  subject (venue): myconference TOBEFILLED-1
+
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+PDF meta-data:
+  title: Studying the Effect of Hindi Tokenizer Performance on Downstream Tasks
+  author(s): Rashi Goel ; Fatiha Sadat
+  subject (venue): myconference TOBEFILLED-1
+
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+PDF meta-data:
+  title: Adapting Multilingual LLMs to Low-Resource Languages using Continued Pre-training and Synthetic Corpus: A Case Study for Hindi LLMs
+  author(s): Raviraj Joshi ; Kanishk Singla ; Anusha Kamath ; Raunak Kalani ; Rakesh Paul ; Utkarsh Vaidya ; Sanjay Singh Chauhan ; Niranjan Wartikar ; Eileen Long
+  subject (venue): myconference TOBEFILLED-1
+
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+PDF meta-data:
+  title: OVQA: A Dataset for Visual Question Answering and Multimodal Research in Odia Language
+  author(s): Shantipriya Parida ; Shashikanta Sahoo ; Sambit Sekhar ; Kalyanamalini Sahoo ; Ketan Kotwal ; Sonal Khosla ; Satya Ranjan Dash ; Aneesh Bose ; Guneet Singh Kohli ; Smruti Smita Lenka ; Ondřej Bojar
+  subject (venue): myconference TOBEFILLED-1
+
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+[WARNING] tokens.py:221 Did not find PDF object (292, 0) (line=15464, col=1, token='startxref')
+PDF meta-data:
+  title: Advancing Multilingual Speaker Identification and Verification for Indo-Aryan and Dravidian Languages
+  author(s): Braveenan Sritharan ; Uthayasanker Thayasivam
+  subject (venue): myconference TOBEFILLED-1
+
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+PDF meta-data:
+  title: Sentiment Analysis of Sinhala News Comments Using Transformers
+  author(s): Isuru Bandaranayake ; Hakim Usoof
+  subject (venue): myconference TOBEFILLED-1
+
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+[WARNING] tokens.py:221 Did not find PDF object (134, 0) (line=1163, col=1, token='endobj')
+PDF meta-data:
+  title: ExMute: A Context-Enriched Multimodal Dataset for Hateful Memes
+  author(s): Riddhiman Swanan Debnath ; Nahian Beente Firuj ; Abdul Wadud Shakib ; Sadia Sultana ; Md Saiful Islam
+  subject (venue): myconference TOBEFILLED-1
+
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+PDF meta-data:
+  title: Studying the capabilities of Large Language Models in solving Combinatorics Problems posed in Hindi
+  author(s): Yash Kumar ; Subhajit Roy
+  subject (venue): myconference TOBEFILLED-1
+
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+PDF meta-data:
+  title: From Scarcity to Capability: Empowering Fake News Detection in Low-Resource Languages with LLMs
+  author(s): Hrithik Majumdar Shibu ; Shrestha Datta ; Md. Sumon Miah ; Nasrullah Sami ; Mahruba Sharmin Chowdhury ; Md Saiful Islam
+  subject (venue): myconference TOBEFILLED-1
+
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+PDF meta-data:
+  title: Enhancing Participatory Development Research in South Asia through LLM Agents System: An Empirically-Grounded Methodological Initiative from Field Evidence in Sri Lankan
+  author(s): Xinjie Zhao ; Hao Wang ; Shyaman Maduranga Sriwarnasinghe ; Jiacheng Tang ; Shiyun Wang ; Sayaka Sugiyama ; So Morikawa
+  subject (venue): myconference TOBEFILLED-1
+
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+PDF meta-data:
+  title: Identifying Aggression and Offensive Language in Code-Mixed Tweets: A Multi-Task Transfer Learning Approach
+  author(s): Bharath Kancharla ; Prabhjot Singh ; Lohith Bhagavan Kancharla ; Yashita Chama ; Raksha Sharma
+  subject (venue): myconference TOBEFILLED-1
+
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+PDF meta-data:
+  title: Team IndiDataMiner at IndoNLP 2025: Hindi Back Transliteration - Roman to Devanagari using LLaMa
+  author(s): Saurabh Kumar ; Dhruvkumar Babubhai Kakadiya ; Sanasam Ranbir Singh
+  subject (venue): myconference TOBEFILLED-1
+
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+[WARNING] tokens.py:221 Did not find PDF object (321, 0) (line=2539, col=1, token='startxref')
+PDF meta-data:
+  title: IndoNLP 2025 Shared Task: Romanized Sinhala to Sinhala Reverse Transliteration Using BERT
+  author(s): Sandun Sameera Perera ; Lahiru Prabhath Jayakodi ; Deshan Koshala Sumanathilaka ; Isuri Anuradha
+  subject (venue): myconference TOBEFILLED-1
+
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+PDF meta-data:
+  title: Sinhala Transliteration: A Comparative Analysis Between Rule-based and Seq2Seq Approaches
+  author(s): Widanalage Mario Yomal De Mel ; Kasun Imesha Wickramasinghe ; Nisansa de Silva ; Surangika Dayani Ranathunga
+  subject (venue): myconference TOBEFILLED-1
+
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+[WARNING] tokens.py:221 Did not find PDF object (339, 0) (line=2523, col=1, token='startxref')
+PDF meta-data:
+  title: Romanized to Native Malayalam Script Transliteration Using an Encoder-Decoder Framework
+  author(s): Bajiyo Baiju ; Kavya Manohar ; Leena G. Pillai ; Elizabeth Sherly
+  subject (venue): myconference TOBEFILLED-1
+
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+[WARNING] tokens.py:221 Did not find PDF object (70, 0) (line=1234, col=1, token='startxref')
+cp /var/www/v3/coling2025/www/IndoNLP25/manager/aclpub/all/templates/proceedings/cdrom-root-files/*.css .  
+creating HTML index page ...
+/var/www/v3/coling2025/www/IndoNLP25/manager/aclpub/all/bin/index.pl db meta > cdrom/index.html
+------------------------------------
+make advertisement
+creating advertisement.html ...
+/var/www/v3/coling2025/www/IndoNLP25/manager/aclpub/all/bin/advertisement.pl cdrom/index.html < cdrom/program.html > advertisement.html
+------------------------------------
+make all
+make[1]: 'book.pdf' is up to date.
+Almost done ... ready to package things up ...
+cd ..; rm -rf proceedings/abstracts; tar -cz --exclude='proceedings/final' -f proceedings.tgz proceedings; cd proceedings
